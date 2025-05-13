@@ -85,7 +85,7 @@
             }
 
             int toplamTutar = fiyat + (kisiSayisi * ulasimFiyati); //toplam tatil fiyatını hesaplama 
-            Console.WriteLine($"\nToplam Tutar: Paket ({fiyat} TL) + Ulaşım ({kisiSayisi} kişi x {ulasimFiyati} TL) = {toplamTutar} TL\n");
+            Console.WriteLine($"\nToplam Tutar: Paket ({fiyat} TL x {kisiSayisi}) + Ulaşım ({ulasimFiyati} TL x {kisiSayisi}) = {toplamTutar} TL\n");
 
             Console.Write("Başka bir tatil planlamak ister misiniz? (E/H): "); //kullanıcıya devam etmek isteyip istemediğini soruyoruz.
             string cevap = Console.ReadLine().Trim().ToUpper();
