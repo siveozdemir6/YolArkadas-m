@@ -15,7 +15,7 @@
             Console.WriteLine("- Bodrum (Paket başlangıç fiyatı: 4000 TL)");
             Console.WriteLine("- Marmaris (Paket başlangıç fiyatı: 3000 TL)");
             Console.WriteLine("- Çeşme (Paket başlangıç fiyatı: 5000 TL)\n");
-            string lokasyon; //lokasyon, fiyat, fiyatbilgi değişkenlerini tanımladık.
+            string lokasyon; //lokasyon, fiyat değişkenlerini tanımladık.
             int fiyat;
             
 
@@ -24,19 +24,19 @@
                 Console.WriteLine("Lütfen tatil yapmak istediğiniz lokasyonu giriniz: Bodrum, Marmaris, Çeşme");
                 lokasyon = Console.ReadLine().Trim().ToLower(); //büyük küçük harf farkı için tolower kullanıldı.
 
-                if (lokasyon == "bodrum") //bodrum seçilirse ilgili fiyat ve bilgilendirme mesajı veriliyor.
+                if (lokasyon == "bodrum") //bodrum seçilirse bilgilendirme mesajı veriliyor.
                 {
                     fiyat = bodrumFiyat;
                     Console.WriteLine("Bodrum'un eşsiz plajlarında yüzebilir, tarihi ve doğal güzelliklerini keşfedebilirsiniz!");
                     break;
                 }
-                else if (lokasyon == "marmaris") //marmaris seçilirse ilgili fiyat ve bilgilendirme mesajı veriliyor.
+                else if (lokasyon == "marmaris") //marmaris seçilirse bilgilendirme mesajı veriliyor.
         {
                     fiyat = marmarisFiyat;
                     Console.WriteLine("Marmaris'te gündüzleri mükemmel plajlarda güneşlenirken akşamları ise hareketli gece hayatına katılabilirsiniz!");
                     break;
                 }
-                else if (lokasyon == "çeşme") //çeşme seçilirse ilgili fiyat ve bilgilendirme mesajı veriliyor.
+                else if (lokasyon == "çeşme") //çeşme seçilirse bilgilendirme mesajı veriliyor.
         {
                     fiyat = cesmeFiyat;
                     Console.WriteLine("Çeşme'de rüzgar sörfü yapabilir, etraftaki tarihi ve doğal güzellikleri keşfetme şansı yakalayabilirsiniz!");
